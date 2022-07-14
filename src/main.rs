@@ -47,7 +47,7 @@ impl EventHandler for Handler {
                 let result = Command::new("bash")
           .arg("-c")
           .arg(format!(
-            "cd ../ic && dfx canister --network ic call au7z2-aaaaa-aaaah-abk7a-cai work '(\"{}\")'",
+            "cd ../emp-ic && dfx canister --network ic call au7z2-aaaaa-aaaah-abk7a-cai work '(\"{}\")'",
             user
           ))
           .output()
@@ -74,7 +74,7 @@ impl EventHandler for Handler {
                 let result = Command::new("bash")
           .arg("-c")
           .arg(format!(
-            "cd ../ic && dfx canister --network ic call au7z2-aaaaa-aaaah-abk7a-cai daily '(\"{}\")'",
+            "cd ../emp-ic && dfx canister --network ic call au7z2-aaaaa-aaaah-abk7a-cai daily '(\"{}\")'",
             user
           ))
           .output()
@@ -107,7 +107,7 @@ impl EventHandler for Handler {
                 let result = Command::new("bash")
           .arg("-c")
           .arg(format!(
-            "cd ../ic && dfx canister --network ic call au7z2-aaaaa-aaaah-abk7a-cai user_balance '(\"{}\")'",
+            "cd ../emp-ic && dfx canister --network ic call au7z2-aaaaa-aaaah-abk7a-cai user_balance '(\"{}\")'",
             user
           ))
           .output()
