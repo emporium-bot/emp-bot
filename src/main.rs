@@ -142,7 +142,7 @@ impl EventHandler for Handler {
                     msg.author.id, msg.author.name, msg.author.discriminator,
                 );
                 let response = format!(
-                "{}```dfx canister --network ic call au7z2-aaaaa-aaaah-abk7a-cai register '(\"{}\")'```",
+                "{}```dfx canister --network ic call au7z2-aaaaa-aaaah-abk7a-cai register '(\"{}\", null)'```",
                 REGISTER_TEXT,
                 msg.author.id
               );
